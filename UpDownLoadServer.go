@@ -199,7 +199,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// 构建下载 URL
-	downloadURL := fmt.Sprintf("%s://%s/downloads%s/%s", scheme, host, folderName, fileName)
+	downloadURL := fmt.Sprintf("%s://%s/download%s/%s", scheme, host, folderName, fileName)
 
 	// 构建返回的字符串
 	response := downloadURL
